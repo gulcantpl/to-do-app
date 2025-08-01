@@ -1,31 +1,22 @@
-
 @media (max-width: 768px) {
   .container {
     width: 90%;
+     
   }
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
+html {
+  background-color: #181a1b !important;
+  height: 100%;
 }
-
- .to-do-container {
-    width: 600px;
-    max-width: 90%;
-    margin: 6px auto;
-    padding: 12px 10px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow:  8px 16px rgba(0, 0, 0, 0.15);
-    text-align: center;
-} 
-
+body {
+  min-height: 100vh;
+  background: transparent !important;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+ font-family: Arial, sans-serif;
+}
 
 h1 {
     text-align: center;
@@ -33,94 +24,73 @@ h1 {
     margin-bottom: 20px;
 }
 
- input[type="text"] {
+input[type="text"] {
     width: 80%;
     height: 36px;
     padding: 4px 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     border-radius: 5px;
     margin-right: 10px;
-}  
- input[type="checkbox"] {
-  accent-color: #8b2f2f; 
+
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 1px solid #2e2929;
+  box-shadow: 0 0 5px #1d1a1a;
+}
+
+input[type="checkbox"] {
+    accent-color: #444;
 }
 
 button {
     padding: 4px 10px;
     border-radius: 5px;
     cursor: pointer;
-    color: white;
+    color: #d1cfcf;
+    background-color: #343a40;
     border: none;
     transition: background-color 0.3s, transform 0.2s;
-
-} 
-
-button:hover {
-    background-color: #131112;
 }
 
- ul {
+button:hover {
+    background-color: #495057;
+}
+
+ul {
     list-style-type: none;
     padding: 0;
-} 
+}
 
- li {
-    background: #ece8e8;
+li {
+    background: #2c3035;
+    color: #141313;
     margin: 5px 0;
     padding: 5px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-} 
+}
 
-li button  {
+li button {
     margin: 5px;
     vertical-align: middle;
-
 }
 
 li button:hover {
-    background-color: #c82333;
+    background-color: #0e0d0d;
     transform: scale(1.05);
 }
 
 .completed {
-  text-decoration: line-through;
-  color: gray;
+    text-decoration: line-through;
+    color: gray;
 }
 
-/* Dark mode styles */
-body.dark-mode {
-    background-color: #181a1b;
-    color: #666565;
-}
+.todo-container {
+    background: #e9e6e6;
 
-body.dark-mode .todo-container {
-    background: #23272b;
     box-shadow: 0 8px 16px rgba(0,0,0,0.6);
-}
-
-body.dark-mode input[type="text"] {
-    background: #23272b;
-    color: #a09f9f;
-    border: 1px solid #444;
-}
-
-body.dark-mode button {
-    color: #d1cfcf;
-    background-color: #343a40;
-    border: none;
-}
-
-body.dark-mode button:hover {
-    background-color: #495057;
-}
-
-body.dark-mode li {
-    background: #2c3035;
-    color: #e0e0e0;
-}
-body.dark-mode input[type="checkbox"] {
-  accent-color: #444; 
 }

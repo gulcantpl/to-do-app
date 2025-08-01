@@ -46,7 +46,6 @@ function renderTasks() {
     // Silme butonu
     const removeButton = document.createElement('button');
     removeButton.innerHTML = '<i class="fa-regular fa-square-minus"></i>';
-    removeButton.classList.add('btn', 'btn-danger', 'btn-sm');
     removeButton.onclick = () => removeTask(index);
 
     li.appendChild(checkbox);
@@ -65,8 +64,4 @@ document.getElementById('add-task-btn').onclick = function () {
 document.getElementById('clear-tasks-btn').onclick = function () {
   tasks = [];
   renderTasks();
-};
-
-document.getElementById('toggle-dark').onclick = function () {
-  document.body.classList.toggle('dark-mode');
 };

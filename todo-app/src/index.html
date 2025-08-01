@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do Application</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="container mx-auto p-4 bg-gray-100 rounded shadow-md">
+      <h1>To-Do List</h1>
+      <div style="display: flex; align-items: center; gap: 8px">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Add a new task..."
+          style="flex: 1"
+        />
+        <button id="add-task-btn">Add Task</button>
+        <button id="clear-tasks-btn">Clear Tasks</button>
+      </div>
+    </div>
+    <div class="container mx-auto p-4 bg-gray-100 rounded shadow-md mt-4">
+      <ul id="task-list"></ul>
+    </div>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

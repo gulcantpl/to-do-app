@@ -1,0 +1,24 @@
+{
+  "name": "to-do",
+  "version": "1.0.0",
+  "description": "This is a simple To-Do application built using HTML, CSS, and JavaScript. It allows users to add, remove, and manage their tasks efficiently.",
+  "main": "index.js",
+  "scripts": {
+  "start": "node index.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gulcantpl/to-do-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gulcantpl/to-do-app/issues"
+  },
+  "homepage": "https://github.com/gulcantpl/to-do-app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
